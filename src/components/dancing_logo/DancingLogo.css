@@ -3,11 +3,15 @@
   src: url('../../fonts/Aller.ttf');
 }
 
+:root {
+  --mainWidth: 500px;
+}
+
 .whiteCircle {
   background-color: white;
-  width: 500px;
-  height: 500px;
-  border-radius: 250px;
+  width: var(--mainWidth);
+  height: var(--mainWidth);
+  border-radius: calc(var(--mainWidth) / 2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,11 +19,11 @@
 
 .pinkCircle {
   background-color: #f762a4;
-  width: 450px;
-  height: 450px;
-  border-radius: 225px;
+  width: calc(var(--mainWidth) - 50px);
+  height: calc(var(--mainWidth) - 50px);
+  border-radius: calc((var(--mainWidth) - 50px) / 2);
   color: white;
-  font-size: 160px;
+  font-size: calc(var(--mainWidth) / 3);
   font-family: 'Aller';
   display: flex;
   text-align: center;
