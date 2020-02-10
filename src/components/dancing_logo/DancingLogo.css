@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Aller';
+  src: url('../../fonts/Aller.ttf');
+}
+
+.whiteCircle {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pinkCircle {
+  background-color: #f762a4;
+  width: 450px;
+  height: 450px;
+  border-radius: 225px;
+  color: white;
+  font-size: 160px;
+  font-family: 'Aller';
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
