@@ -4,29 +4,39 @@
 }
 
 :root {
-  --mainWidth: 500px;
+  --global--width: 500px;
+  --global--transition--duration: 0.3s;
+  --global--transition--timing--function: ease;
 }
 
 .whiteCircle {
   background-color: white;
-  width: var(--mainWidth);
-  height: var(--mainWidth);
-  border-radius: calc(var(--mainWidth) / 2);
+  width: var(--global--width);
+  height: var(--global--width);
+  border-radius: calc(var(--global--width) / 2);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: var(--global--transition--duration);
+  transition-timing-function: var(--global--transition--timing--function);
 }
 
 .pinkCircle {
   background-color: #f762a4;
-  width: calc(var(--mainWidth) - 50px);
-  height: calc(var(--mainWidth) - 50px);
-  border-radius: calc((var(--mainWidth) - 50px) / 2);
+  width: calc(var(--global--width) - 50px);
+  height: calc(var(--global--width) - 50px);
+  border-radius: calc((var(--global--width) - 50px) / 2);
   color: white;
-  font-size: calc(var(--mainWidth) / 3);
+  font-size: calc(var(--global--width) / 3);
   font-family: 'Aller';
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--global--transition--duration);
+  transition-timing-function: var(--global--transition--timing--function);
+}
+
+.whiteCircle:hover > :root {
+  --global--width: 600px;
 }
