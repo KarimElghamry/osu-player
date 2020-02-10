@@ -35,8 +35,11 @@
   justify-content: center;
   transition-duration: var(--global--transition--duration);
   transition-timing-function: var(--global--transition--timing--function);
-}
 
-.whiteCircle:hover > :root {
-  --global--width: 600px;
+  /* to disable stext selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
