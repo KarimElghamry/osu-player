@@ -5,7 +5,9 @@ class UploadSection extends React.Component {
   render () {
     return (
       <div className="uploadContainer">
-        <button className="uploadButton">Upload</button>
+        <button className="uploadButton" onClick={() => this.props.onClick ()}>
+          Upload
+        </button>
       </div>
     );
   }
