@@ -25,18 +25,20 @@ class DancingLogo extends React.Component {
 
   render () {
     return (
-      <div
-        className="whiteCircle"
-        onMouseEnter={() => {
-          this.setState ({pauseAnimation: true, expanded: true});
-          document.body.style.setProperty ('--global--width', '600px');
-        }}
-        onMouseLeave={() => {
-          this.setState ({pauseAnimation: false, expanded: false});
-          document.body.style.setProperty ('--global--width', '500px');
-        }}
-      >
-        <div className="pinkCircle">osu!</div>
+      <div className="logoContainer">
+        <div
+          className="whiteCircle"
+          onMouseEnter={() => {
+            this.setState ({pauseAnimation: true, expanded: true});
+            document.body.style.setProperty ('--global--width', '600px');
+          }}
+          onMouseLeave={() => {
+            this.setState ({pauseAnimation: false, expanded: false});
+            document.body.style.setProperty ('--global--width', '500px');
+          }}
+        >
+          <div className="pinkCircle">osu!</div>
+        </div>
       </div>
     );
   }

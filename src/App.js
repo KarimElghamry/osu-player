@@ -1,5 +1,6 @@
 import React from 'react';
 import DancingLogo from './components/dancing_logo/DancingLogo.js';
+import UploadSection from './components/upload_section/UploadSection.js';
 import './App.css';
 
 class App extends React.Component {
@@ -7,6 +8,7 @@ class App extends React.Component {
     return (
       <div className="mainContainer">
         <DancingLogo />
+        <UploadSection />
       </div>
     );
   }

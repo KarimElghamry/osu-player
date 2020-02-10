@@ -9,6 +9,13 @@
   --global--transition--timing--function: ease;
 }
 
+.logoContainer {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .whiteCircle {
   background-color: white;
   width: var(--global--width);
