@@ -4,21 +4,21 @@
 }
 
 .uploadContainer {
-  width: 500px;
-  height: 100px;
+  width: 100%;
+  height: calc((3vw + 3vh));
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .uploadButton {
-  height: 75px;
-  width: 250px;
+  height: 100%;
+  width: calc((10vw + 10vh));
   background-color: transparent;
   border: white solid 2px;
-  border-radius: 30px;
+  border-radius: calc((10vw + 10vh) / 2.5);
   color: white;
-  font-size: 30px;
+  font-size: calc((9vh + 14vw) / 10);
   font-family: 'Aller';
   transition-duration: 0.4s;
 }

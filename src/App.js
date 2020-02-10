@@ -32,7 +32,15 @@ class App extends React.Component {
         />
         <DancingLogo />
         <UploadSection onClick={this.handleUploadClick} />
-        <div style={{color: 'white'}}>
+        <div
+          style={{
+            color: 'white',
+            height: '50px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           {this.state.selectedFile != null
             ? this.state.selectedFile.name
             : null}

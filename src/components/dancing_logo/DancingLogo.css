@@ -4,13 +4,13 @@
 }
 
 :root {
-  --global--width: 500px;
+  --global--width: calc((50vw + 50vh) / 3);
   --global--transition--duration: 0.3s;
   --global--transition--timing--function: ease;
 }
 
 .logoContainer {
-  height: 700px;
+  height: calc((50vw + 50vh) / 2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,9 +30,9 @@
 
 .pinkCircle {
   background-color: #f762a4;
-  width: calc(var(--global--width) - 50px);
-  height: calc(var(--global--width) - 50px);
-  border-radius: calc((var(--global--width) - 50px) / 2);
+  width: calc(var(--global--width) / 1.1);
+  height: calc(var(--global--width) / 1.1);
+  border-radius: calc((var(--global--width) / 1.1) / 2);
   color: white;
   font-size: calc(var(--global--width) / 3);
   font-family: 'Aller';

@@ -1,6 +1,9 @@
 import React from 'react';
 import './DancingLogo.css';
 
+const expandedWidth = 'calc((50vw + 50vh) / 2.4)';
+const defaultWidth = 'calc((50vw + 50vh) / 3)';
+
 class DancingLogo extends React.Component {
   constructor (props) {
     super (props);
@@ -18,9 +21,9 @@ class DancingLogo extends React.Component {
     setInterval (() => {
       if (this.state.pauseAnimation) return;
       this.setState ({expanded: !this.state.expanded});
-      const size = this.state.expanded ? '600px' : '500px';
+      const size = this.state.expanded ? expandedWidth : defaultWidth;
       document.body.style.setProperty ('--global--width', size);
-    }, 350);
+    }, 300);
   }
 
   render () {
@@ -30,11 +33,11 @@ class DancingLogo extends React.Component {
           className="whiteCircle"
           onMouseEnter={() => {
             this.setState ({pauseAnimation: true, expanded: true});
-            document.body.style.setProperty ('--global--width', '600px');
+            document.body.style.setProperty ('--global--width', expandedWidth);
           }}
           onMouseLeave={() => {
             this.setState ({pauseAnimation: false, expanded: false});
-            document.body.style.setProperty ('--global--width', '500px');
+            document.body.style.setProperty ('--global--width', defaultWidth);
           }}
         >
           <div className="pinkCircle">osu!</div>
