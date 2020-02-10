@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/osu-player/static/css/main.ba02b3b0.chunk.css",
+    "main.js": "/osu-player/static/js/main.945d0483.chunk.js",
+    "main.js.map": "/osu-player/static/js/main.945d0483.chunk.js.map",
+    "runtime-main.js": "/osu-player/static/js/runtime-main.7a9539e6.js",
+    "runtime-main.js.map": "/osu-player/static/js/runtime-main.7a9539e6.js.map",
+    "static/js/2.8c9444c5.chunk.js": "/osu-player/static/js/2.8c9444c5.chunk.js",
+    "static/js/2.8c9444c5.chunk.js.map": "/osu-player/static/js/2.8c9444c5.chunk.js.map",
+    "index.html": "/osu-player/index.html",
+    "precache-manifest.51da23ca6d2df722d7830f02dc7001eb.js": "/osu-player/precache-manifest.51da23ca6d2df722d7830f02dc7001eb.js",
+    "service-worker.js": "/osu-player/service-worker.js",
+    "static/css/main.ba02b3b0.chunk.css.map": "/osu-player/static/css/main.ba02b3b0.chunk.css.map",
+    "static/js/2.8c9444c5.chunk.js.LICENSE.txt": "/osu-player/static/js/2.8c9444c5.chunk.js.LICENSE.txt",
+    "static/media/UploadSection.css": "/osu-player/static/media/Aller.ec478fc7.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a9539e6.js",
+    "static/js/2.8c9444c5.chunk.js",
+    "static/css/main.ba02b3b0.chunk.css",
+    "static/js/main.945d0483.chunk.js"
+  ]
+}
