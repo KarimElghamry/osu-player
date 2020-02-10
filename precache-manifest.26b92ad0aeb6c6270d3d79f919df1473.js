@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7657cc6d6b4439c049c1e112e916279f",
+    "revision": "a03101816bbdc1d50b70bd8421f898c5",
     "url": "/osu-player/index.html"
   },
   {
-    "revision": "14a03cdae6b9cdcb4ac1",
+    "revision": "9301c29d2abace32e27b",
     "url": "/osu-player/static/css/main.ba02b3b0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/osu-player/static/js/2.8c9444c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "14a03cdae6b9cdcb4ac1",
-    "url": "/osu-player/static/js/main.945d0483.chunk.js"
+    "revision": "9301c29d2abace32e27b",
+    "url": "/osu-player/static/js/main.50cc4c02.chunk.js"
   },
   {
     "revision": "d9ec0f5b7f6663fbcd42",
