@@ -4,20 +4,20 @@ import UploadSection from './components/upload_section/UploadSection.js';
 import './App.css';
 
 class App extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {selectedFile: null};
   }
 
-  componentDidMount () {
+  componentDidMount() {
     document.body.style.backgroundColor = '#18171C';
   }
 
   handleUploadClick = () => {
-    this.fileUpload.click ();
+    this.fileUpload.click();
   };
 
-  render () {
+  render() {
     return (
       <div className="mainContainer">
         <input
@@ -27,7 +27,7 @@ class App extends React.Component {
           style={{display: 'none'}}
           onChange={() => {
             const uploadedFile = this.fileUpload.files[0];
-            this.setState ({selectedFile: uploadedFile});
+            this.setState({selectedFile: uploadedFile});
           }}
         />
         <DancingLogo />
@@ -35,6 +35,7 @@ class App extends React.Component {
         <div
           style={{
             color: 'white',
+            fontSize: '20px',
             height: '50px',
             display: 'flex',
             justifyContent: 'center',
