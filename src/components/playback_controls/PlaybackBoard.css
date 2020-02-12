@@ -1,0 +1,24 @@
+.boardContainer {
+  height: calc((3vw + 3vh));
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton {
+  box-sizing: border-box;
+  --size: calc((3vw + 6vh) / 2);
+  width: var(--size);
+  height: var(--size);
+  border-style: solid;
+  border-width: calc(var(--size) / 2) 0px calc(var(--size) / 2)
+    calc(var(--size) / 1.2);
+  border-color: transparent transparent transparent white;
+  transition-duration: 0.3s;
+}
+
+.playButton:hover {
+  border-color: transparent transparent transparent #f762a4;
+}
