@@ -1,43 +1,44 @@
 import React from 'react';
 import './DancingLogo.css';
 
-const expandedWidth = 'calc((50vw + 50vh) / 2.4)';
+const expandedWidth = 'calc((50vw + 50vh) / 2.6)';
 const defaultWidth = 'calc((50vw + 50vh) / 3)';
 
 class DancingLogo extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       expanded: false,
       pauseAnimation: false,
     };
   }
 
-  componentDidMount () {
-    this.dancingEffect ();
+  componentDidMount() {
+    this.dancingEffect();
   }
 
-  dancingEffect () {
-    setInterval (() => {
+  dancingEffect() {
+    setInterval(() => {
       if (this.state.pauseAnimation) return;
-      this.setState ({expanded: !this.state.expanded});
+      if (!this.props.playing) return;
+      this.setState({expanded: !this.state.expanded});
       const size = this.state.expanded ? expandedWidth : defaultWidth;
-      document.body.style.setProperty ('--global--width', size);
+      document.body.style.setProperty('--global--width', size);
     }, 300);
   }
 
-  render () {
+  render() {
     return (
       <div className="logoContainer">
         <div
           className="whiteCircle"
           onMouseEnter={() => {
-            this.setState ({pauseAnimation: true, expanded: true});
-            document.body.style.setProperty ('--global--width', expandedWidth);
+            this.setState({pauseAnimation: true, expanded: true});
+            document.body.style.setProperty('--global--width', expandedWidth);
           }}
           onMouseLeave={() => {
-            this.setState ({pauseAnimation: false, expanded: false});
-            document.body.style.setProperty ('--global--width', defaultWidth);
+            this.setState({pauseAnimation: false, expanded: false});
+            document.body.style.setProperty('--global--width', defaultWidth);
           }}
         >
           <div className="pinkCircle">osu!</div>

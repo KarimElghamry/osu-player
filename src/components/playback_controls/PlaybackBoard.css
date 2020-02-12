@@ -1,3 +1,7 @@
+:root {
+  --global--size: calc((3vw + 6vh) / 2);
+}
+
 .boardContainer {
   height: calc((3vw + 3vh));
   width: 100%;
@@ -5,10 +9,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-:root {
-  --global--size: calc((3vw + 6vh) / 2);
 }
 
 .playButton {
