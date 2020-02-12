@@ -7,18 +7,36 @@
   align-items: center;
 }
 
+:root {
+  --global--size: calc((3vw + 6vh) / 2);
+}
+
 .playButton {
   box-sizing: border-box;
-  --size: calc((3vw + 6vh) / 2);
-  width: var(--size);
-  height: var(--size);
+  width: var(--global--size);
+  height: var(--global--size);
   border-style: solid;
-  border-width: calc(var(--size) / 2) 0px calc(var(--size) / 2)
-    calc(var(--size) / 1.2);
+  border-width: calc(var(--global--size) / 2) 0px calc(var(--global--size) / 2)
+    calc(var(--global--size) / 1.2);
   border-color: transparent transparent transparent white;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
+  transition-property: border;
+}
+
+.pauseButton {
+  width: calc(var(--global--size) / 3);
+  height: var(--global--size);
+  border-width: 0 calc(var(--global--size) / 3) 0 calc(var(--global--size) / 3);
+  border-style: solid;
+  border-color: black white black white;
+  transition-duration: 0.2s;
+  transition-property: border;
 }
 
 .playButton:hover {
   border-color: transparent transparent transparent #f762a4;
+}
+
+.pauseButton:hover {
+  border-color: #f762a4;
 }

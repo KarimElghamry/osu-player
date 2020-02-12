@@ -8,7 +8,7 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {selectedFile: null, player: null};
+    this.state = {player: null, playing: false};
   }
 
   componentDidMount() {
@@ -37,15 +37,21 @@ class App extends React.Component {
                   .split('.')
                   .pop()
                   .toLowerCase(),
+                onend: () => this.setState({playing: false}),
+                onpause: () => this.setState({playing: false}),
+                onplay: () => this.setState({playing: true}),
               });
-              this.setState({selectedFile: uploadedFile, player: player});
+              this.setState({player: player});
             });
             reader.readAsDataURL(uploadedFile);
           }}
         />
         <DancingLogo />
         {this.state.player != null ? (
-          <PlaybackBoard />
+          <PlaybackBoard
+            player={this.state.player}
+            playing={this.state.playing}
+          />
         ) : (
           <UploadSection onClick={this.handleUploadClick} />
         )}
